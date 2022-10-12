@@ -4,6 +4,7 @@
   display: table-cell !important;
   vertical-align: middle;
 }
+
 h1,h2 {
   margin: 0;
   padding: 0;
@@ -86,15 +87,65 @@ h2 {
     height: 400px;
   }
 }
-.fh5co-cover.fh5co-cover-sm .display-t,
-.fh5co-cover.fh5co-cover-sm .display-tc {
-  height: 600px;
-  display: table;
-  width: 100%;
-}
+
 @media screen and (max-width: 768px) {
   .fh5co-cover.fh5co-cover-sm .display-t,
   .fh5co-cover.fh5co-cover-sm .display-tc {
     height: 400px;
   }
+}
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.head-body {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  translate: transformX(-50%);
+}
+
+.mhead {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  height: 200px;
+  width: auto;
+}
+
+.mbody {
+  position: absolute;
+  top: 190px;
+  left: 55px;
+  z-index: 1;
+  height: 200px;
+  width: auto;
+}
+
+.mhead1 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  height: 200px;
+  width: auto;
+}
+
+.mbody1 {
+  position: absolute;
+  top: 190px;
+  right: 55px;
+  z-index: 1;
+  height: 200px;
+  width: auto;
 }
