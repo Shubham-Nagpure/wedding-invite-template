@@ -1,0 +1,21 @@
+#engagement {
+  background-image: url(../images/engagement_background.webp);
+  background-size: cover;
+}
+
+#engagement h1, #engagement h2 {
+  color: #00beed;
+}
+
+#engagement .couple {
+  text-align: center;
+  width: auto;
+  align-items: right;
+}
+
+#engagement text {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  translate: transformX(-50%);
+}

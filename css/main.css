@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+@import url(media.css);
+@import url(ethnic.css);
+@import url(engagement.css);
+@import url(haldi.css);
+@import url(wedding.css);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rancho', cursive;
+}
+
+section {
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

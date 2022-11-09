@@ -1,0 +1,21 @@
+#haldi {
+  background-image: url(../images/haldi_background.webp);
+  background-size: cover;
+}
+
+#haldi h1, #haldi h2 {
+  color: #ffbd08;
+}
+
+#haldi .couple {
+  text-align: center;
+  width: auto;
+  align-items: right;
+}
+
+.haldi text {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  translate: transformX(-50%);
+}

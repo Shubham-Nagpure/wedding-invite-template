@@ -1,0 +1,12 @@
+#ethnic {
+  background-image: url("/images/save_date_back1.jpg");
+  background-size: cover;
+}
+
+#ethnic text {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  translate: transformX(-50%);
+}
+
