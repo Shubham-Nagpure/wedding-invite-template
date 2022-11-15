@@ -10,3 +10,13 @@
   translate: transformX(-50%);
 }
 
+#saveTheDate {
+  transform: rotate(-45deg);
+}
+
+.pink-dot {
+  color: #f0394d;
+}
+
+
+
