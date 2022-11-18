@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ani's Wedding Card</title>
 
-    <!-- <script type="text/javascript">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ani's Wedding Card</title>
+
+  <!-- <script type="text/javascript">
       function  changePage(pageNme) {
           console.log('clicked enagement page', num);
           document.getElementById(pageNme).style.display = "none";
@@ -13,98 +14,111 @@
       }
 
     </script> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-	<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    <div class="main-container">
-      <section style = 'display:block' id="ethnic">
-        <div id = "saveTheDate" class="text-center text">
-          <div class="text-center text">
-            <h1>Save </h1>
-            <h1>The Date</h1>
-            <!-- <h2>25 Nov 2022</h2> -->
-         </div>
-          <div id = "Date">
-            - 26
-            <span class = "pink-dot">.</span>
-            Nov
-            <span class = "pink-dot">.</span>
-            2022 -
-          </div>
-       </div>
-       <footer>
-         <div class="text-center text">
+</head>
+
+<body>
+
+  <div class="main-container">
+    <section style='display:block' id="ethnic">
+      <div id="saveTheDate" class="text-center text">
+        <div class="text-center text">
+          <h1>Save </h1>
+          <h1>The Date</h1>
+          <!-- <h2>25 Nov 2022</h2> -->
+        </div>
+        <div id="Date">
+          - 26
+          <span class="pink-dot">.</span>
+          Nov
+          <span class="pink-dot">.</span>
+          2022 -
+        </div>
+      </div>
+      <!-- <footer>
+        <div class="text-center text">
           <button type="button" onclick="changePage(1)">Engagement</button>
           <button type="button" onclick="changePage(2)">Haladi</button>
           <button type="button" onclick="changePage(3)">Marriage</button>
-         </div>
-       </footer>
-      </section>
-
-      <section style = 'display:none' id="engagement">
-        <div class="couple">
-          <img src="./images/engagement_couple.png">
         </div>
-        <div class="text-center mt-auto text">
-          <h1>Engagement Ceremony</h1>
-          <h2>Date: 25 November 2022   @ 5:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-       </div>
-       <div class="text-center text">
+      </footer> -->
+    </section>
+
+    <section style='display:none' id="engagement">
+      <div class="couple">
+        <img src="./images/engagement_couple.png">
+      </div>
+      <div class="text-center mt-auto text">
+        <h1>Engagement Ceremony</h1>
+        <h2>Date: 25 November 2022 @ 5:00 PM</h2>
+        <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
+      </div>
+      <div class="text-center text">
         <button type="button" onclick="changePage(0)">Home</button>
         <button type="button" onclick="changePage(1)">Engagement</button>
         <button type="button" onclick="changePage(2)">Haladi</button>
         <button type="button" onclick="changePage(3)">Marriage</button>
-       </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Haldi Ceremony Details -->
-      <section style = 'display:none' id="haldi">
-        <div class="couple">
-          <img src="./images/haldi_couple.png">
-        </div>
-        <div class="text-center mt-auto text">
-          <h1>Haldi Ceremony</h1>
-          <h2>Date: 25 November 2022   @ 7:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-        </div>
+    <!-- Haldi Ceremony Details -->
+    <section style='display:none' id="haldi">
+      <div class="couple">
+        <img src="./images/haldi_couple.png">
+      </div>
+      <div class="text-center mt-auto text">
+        <h1>Haldi Ceremony</h1>
+        <h2>Date: 25 November 2022 @ 7:00 PM</h2>
+        <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
+      </div>
+      <div class="text-center text">
+        <button type="button" onclick="changePage(0)">Home</button>
+        <button type="button" onclick="changePage(1)">Engagement</button>
+        <button type="button" onclick="changePage(2)">Haladi</button>
+        <button type="button" onclick="changePage(3)">Marriage</button>
+      </div>
+    </section>
+
+    <!-- Wedding Ceremony Details -->
+    <section style='display:none' id="wedding">
+      <div class="couple">
+        <img src="./images/wedding_couple.png">
+      </div>
+      <div class="text-center mt-auto text">
+        <h1>Wedding Ceremony</h1>
+        <h2>Date: 26 November 2022 @ 12:00 PM</h2>
+        <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
         <div class="text-center text">
           <button type="button" onclick="changePage(0)">Home</button>
           <button type="button" onclick="changePage(1)">Engagement</button>
           <button type="button" onclick="changePage(2)">Haladi</button>
           <button type="button" onclick="changePage(3)">Marriage</button>
-         </div>
-      </section>
+        </div>
+        <div class="firework firework1"></div>
+        <div class="firework firework2"></div>
+        <div class="firework firework3"></div>
+        <div class="firework firework4"></div>
+        <div class="firework firework5"></div>
 
-      <!-- Wedding Ceremony Details -->
-      <section style = 'display:none' id="wedding">
-        <div class="couple">
-          <img src="./images/wedding_couple.png">
-        </div>
-        <div class="text-center mt-auto text">
-          <h1>Wedding Ceremony</h1>
-          <h2>Date: 26 November 2022   @ 12:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-          <div class="text-center text">
-            <button type="button" onclick="changePage(0)">Home</button>
-            <button type="button" onclick="changePage(1)">Engagement</button>
-            <button type="button" onclick="changePage(2)">Haladi</button>
-            <button type="button" onclick="changePage(3)">Marriage</button>
-           </div>
-           <div class="firework firework1"></div>
-           <div class="firework firework2"></div>
-           <div class="firework firework3"></div>
-           <div class="firework firework4"></div>
-           <div class="firework firework5"></div> 
-           
-        </div>
-      </section>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="text-center text-lg-start bg-light text-muted">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <button type="button" onclick="changePage(0)">Home</button>
+        <button type="button" onclick="changePage(1)">Engagement</button>
+        <button type="button" onclick="changePage(2)">Haladi</button>
+        <button type="button" onclick="changePage(3)">Marriage</button>
+      </div>
     </div>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="main.js"></script>
-    <script src="fireworks.js"></script>
-  </body>
+    <!-- Footer -->
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="main.js"></script>
+  <script src="fireworks.js"></script>
+</body>
+
 </html>

@@ -1,5 +1,4 @@
 function changePage(pageNum) {
-    debugger
     let pages = {
         0: 'ethnic',
         1: 'engagement',
