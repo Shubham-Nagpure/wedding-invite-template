@@ -1,22 +1,61 @@
 #ethnic {
-  background-image: url("/images/save_date_back1.jpg");
-  background-size: cover;
+    background-image: url("/home/anigore/Desktop/wedding-invitation/images/save_date_back1.jpg");
+    background-size: cover;
 }
 
 #ethnic text {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  translate: transformX(-50%);
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    translate: transformX(-50%);
 }
 
-#saveTheDate {
-  transform: rotate(-45deg);
+#dateText {
+    padding-top: 20vh;
 }
 
 .pink-dot {
-  color: #f0394d;
+    color: #f0394d;
 }
 
+.names {
+    color: #e5f5e240;
+    text-shadow: 1px 0px 1px rgb(97 99 95 / 59%);
+    ;
+}
 
+.general-text {
+    transform: scale(2.5, 1);
+    line-height: 2;
+    padding-top: 5%;
+    font-size: 1.4rem;
+    -webkit-transform: scale(2.8, 1);
+    /* Safari and Chrome */
+}
 
+.button {
+    background-color: #a1c39a87;
+    border: solid 1px #2f5f26db;
+    border-radius: 15px;
+    /* border: #ffb30c; */
+    color: #615d5db0;
+}
+
+.button-container {
+    transform: scale(1.5, 1);
+    padding-top: 8vh;
+}
+
+.button-sub-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.timer-container {
+    padding-top: 20vh;
+    font-size: 30px;
+    color: #bdbdbc
+}
