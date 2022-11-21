@@ -1,57 +1,334 @@
 <!DOCTYPE html>
 <html>
-	<head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ani's Wedding Card</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-  </head>
-	<body>
+</head>
 
-    <div class="main-container">
-      <section id="ethnic">
-        <div class="text-center text">
-          <h1>Save The Date</h1>
-          <h2>25 Nov 2022</h2>
-       </div>
-      </section>
+<body>
+    <script>
+        var countDownDate = new Date("Nov 26, 2022 12:30:25").getTime();
 
-      <section id="engagement">
-        <div class="couple">
-          <img src="./images/engagement_couple.png">
-        </div>
-        <div class="text-center mt-auto text">
-          <h1>Engagement Ceremony</h1>
-          <h2>Date: 25 November 2022   @ 5:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-       </div>
-      </section>
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-      <!-- Haldi Ceremony Details -->
-      <section id="haldi">
-        <div class="couple">
-          <img src="./images/haldi_couple.png">
-        </div>
-        <div class="text-center mt-auto text">
-          <h1>Haldi Ceremony</h1>
-          <h2>Date: 25 November 2022   @ 7:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-        </div>
-      </section>
+            // Get today's date and time
+            var now = new Date().getTime();
 
-      <!-- Wedding Ceremony Details -->
-      <section id="wedding">
-        <div class="couple">
-          <img src="./images/wedding_couple.png">
-        </div>
-        <div class="text-center mt-auto text">
-          <h1>Wedding Ceremony</h1>
-          <h2>Date: 26 November 2022   @ 12:00 PM</h2>
-          <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
-        </div>
-      </section>
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("timer").innerHTML = days + (days == 1 ? " day, " : " days, ") + hours + "h : " +
+                minutes + "m : " + seconds + "s";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    <div style="overflow: hidden;" class="main-container">
+        <section style='display:block' id="ethnic">
+            <div style="color: #9999996e;" class="text-center text general-text">
+                Toether with our families<br>We are cordially invites you<br>To The marriage of
+            </div>
+            <div id="dateText" class="text-center text names">
+                <div style="margin-top: -7vh; transform: scale(1.3,1.2);">
+                    <h1 style="font-size: 45px">Aniket <small style="color: #e5f5e240;font-size: 20px;">&</small> Pratiksha</h1>
+                </div>
+                <div style="font-size: 30px;padding-top: 5vh; ;" id="saveTheDate" class="div">
+                    <div class="text-center text">
+                        Save The Date
+                        <!-- <h2>25 Nov 2022</h2> -->
+                    </div>
+                    <div id="Date">
+                        ~ 26th November, 2022 ~
+                    </div>
+                </div>
+                <div class="button-container">
+                    <!-- <div class="button-sub-container"> -->
+                    <button class="button" type="button" onclick="changePage(1)">Engagement</button>
+                    <button class="button" type="button" onclick="changePage(2)">Haladi</button>
+                    <button class="button" type="button" onclick="changePage(3)">Marriage</button>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div id="timer" class="text-center timer-container"></div>
+        </section>
+
+        <section style='display:none' id="engagement">
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+            <div class="snow"></div>
+
+            <div class="couple">
+                <img src="./images/engagement_couple.png">
+            </div>
+            <div class="text-center mt-auto text">
+                <h1>Engagement Ceremony</h1>
+                <h2>Date: 25 November 2022 @ 5:00 PM</h2>
+                <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
+            </div>
+            <div class="button-eng-container text-center">
+                <button class="button-eng" type="button" onclick="changePage(0)">Home</button>
+                <button class="button-eng" type="button" onclick="changePage(1)">Engagement</button>
+                <button class="button-eng" type="button" onclick="changePage(2)">Haladi</button>
+                <button class="button-eng" type="button" onclick="changePage(3)">Marriage</button>
+            </div>
+
+        </section>
+
+        <!-- Haldi Ceremony Details -->
+        <section style='display:none' id="haldi">
+            <div class="pettal">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+                <img src="./images/pettal.png">
+            </div>
+            <div class="couple">
+                <img src="./images/haldi_couple.png">
+            </div>
+            <div class="text-center mt-auto text">
+                <h1>Haldi Ceremony</h1>
+                <h2>Date: 25 November 2022 @ 7:00 PM</h2>
+                <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
+            </div>
+            <div class=" button-haladi-container text-center text">
+                <button class="button-haladi" type="button" onclick="changePage(0)">Home</button>
+                <button class="button-haladi" type="button" onclick="changePage(1)">Engagement</button>
+                <button class="button-haladi" type="button" onclick="changePage(2)">Haladi</button>
+                <button class="button-haladi" type="button" onclick="changePage(3)">Marriage</button>
+            </div>
+        </section>
+
+        <!-- Wedding Ceremony Details -->
+        <section style='display:none' id="wedding">
+            <div class="couple">
+                <img src="./images/wedding_couple.png">
+            </div>
+            <div class="text-center mt-auto text">
+                <h1>Wedding Ceremony</h1>
+                <h2>Date: 26 November 2022 @ 12:00 PM</h2>
+                <h2>Place: <a href="https://goo.gl/maps/nBnxtPJ3Y1pWeQyk6"> Jagdale Marriage Hall</a></h2>
+                <div class="button-wedding-container text-center text">
+                    <button class="button-wedding" type="button" onclick="changePage(0)">Home</button>
+                    <button class="button-wedding" type="button" onclick="changePage(1)">Engagement</button>
+                    <button class="button-wedding" type="button" onclick="changePage(2)">Haladi</button>
+                    <button class="button-wedding" type="button" onclick="changePage(3)">Marriage</button>
+                </div>
+                <div class="firework firework1"></div>
+                <div class="firework firework2"></div>
+                <div class="firework firework3"></div>
+                <div class="firework firework4"></div>
+                <div class="firework firework5"></div>
+
+            </div>
+        </section>
+        <!-- Footer -->
+        <!-- <div class="text-center text-lg-start bg-light text-muted">
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        <button type="button" onclick="changePage(0)">Home</button>
+        <button type="button" onclick="changePage(1)">Engagement</button>
+        <button type="button" onclick="changePage(2)">Haladi</button>
+        <button type="button" onclick="changePage(3)">Marriage</button>
+      </div>
+    </div> -->
+        <!-- Footer -->
     </div>
-  </body>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="main.js"></script>
+    <script src="fireworks.js"></script>
+</body>
+
 </html>
