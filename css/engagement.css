@@ -27,11 +27,13 @@
     border-radius: 15px;
     /* border: #ffb30c; */
     color: #615d5db0;
+    margin: 3px;
 }
 
 .button-eng-container {
-    transform: scale(1.5, 1);
-    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
 }
 
 .snow {
