@@ -5,12 +5,14 @@
 @import url(haldi.css);
 @import url(wedding.css);
 @import url(firework.css);
+@import url(button.css);
 html,
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rancho', cursive;
+    caret-color: transparent;
 }
 
 section {

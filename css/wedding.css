@@ -5,7 +5,7 @@
 
 #wedding h1,
 #wedding h2 {
-    color: #ff0a68;
+    color: #700000;
 }
 
 #wedding .couple {
@@ -27,9 +27,11 @@
     border-radius: 15px;
     /* border: #ffb30c; */
     color: #1a130e;
+    margin: 3px;
 }
 
 .button-wedding-container {
-    transform: scale(1.5, 1);
-    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
 }

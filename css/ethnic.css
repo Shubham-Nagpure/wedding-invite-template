@@ -1,6 +1,6 @@
 #ethnic {
-    background-image: url("/home/anigore/Desktop/wedding-invitation/images/save_date_back1.jpg");
-    background-size: cover;
+    background-image: url("../images/save_date_back_new.png");
+    background-size: 105vh;
 }
 
 #ethnic text {
@@ -39,11 +39,13 @@
     border-radius: 15px;
     /* border: #ffb30c; */
     color: #615d5db0;
+    margin: 3px;
 }
 
 .button-container {
-    transform: scale(1.5, 1);
-    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
 }
 
 .button-sub-container {
@@ -55,7 +57,7 @@
 }
 
 .timer-container {
-    padding-top: 20vh;
-    font-size: 30px;
-    color: #bdbdbc
+    padding-top: 62vh;
+    font-size: 14px;
+    color: #000000
 }
