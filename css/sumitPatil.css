@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@100&family=Quicksand:wght@300;700&family=Roboto:wght@400;700&family=Sacramento&family=Zeyada&display=swap");
+@import url(./sakura.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 75%;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+}
+
+.subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.main-title-conect {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+.flower-background {
+  object-fit: fill;
+}
+
+.date {
+  margin-top: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+}
+
+/* main page decoration */
+.right-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+}
+
+.bottom-right-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  transform: scaleY(-1);
+}
+
+.bottom-right-decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  transform: scaleY(-1);
+}
+
+.bottom-left-decoration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  transform: scaleY(-1);
+}
