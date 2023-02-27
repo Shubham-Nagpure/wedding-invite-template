@@ -197,6 +197,15 @@ section .bottom-left-decoration {
   width: 75%;
 }
 
+.creator {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 8px;
+}
+
 .width-50 {
   width: 50%;
 }
@@ -216,4 +225,49 @@ section .bottom-left-decoration {
 
 .rotate-90 {
   transform: scaleX(-1);
+}
+
+.should-display {
+  opacity: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  section .top-left-decoration {
+    width: 30%;
+  }
+
+  section .top-right-decoration {
+    width: 30%;
+  }
+
+  section .bottom-right-decoration {
+    width: 30%;
+  }
+
+  section .bottom-left-decoration {
+    width: 30%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .save-date {
+    width: 35%;
+  }
+
+  .should-display {
+    opacity: 100;
+  }
+
+  .creator {
+    position: absolute;
+    bottom: 0;
+    left: unset;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-family: "Quicksand", sans-serif;
+  }
 }
