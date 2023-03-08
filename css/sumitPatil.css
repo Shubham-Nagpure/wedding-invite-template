@@ -231,6 +231,15 @@ section .bottom-left-decoration {
   opacity: 0;
 }
 
+.creator {
+  white-space: pre-line;
+  margin-bottom: 12px;
+}
+
+.creator-link {
+  color: brown;
+}
+
 @media screen and (min-width: 1200px) {
   section .top-left-decoration {
     width: 30%;
@@ -269,5 +278,6 @@ section .bottom-left-decoration {
     align-items: center;
     justify-items: center;
     font-family: "Quicksand", sans-serif;
+    white-space: unset;
   }
 }
