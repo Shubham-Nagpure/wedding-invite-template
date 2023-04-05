@@ -1,48 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-@import url(media.css);
-@import url(ethnic.css);
-@import url(engagement.css);
-@import url(haldi.css);
-@import url(wedding.css);
-@import url(firework.css);
-@import url(button.css);
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rancho', cursive;
-    caret-color: transparent;
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+/* @import url(media.css);
+@import url(ethnic.css); */
+/* @import url(firework.css); */
+/* @import url(button.css); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rancho", cursive;
+  caret-color: transparent;
 }
 
 section {
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.couple {
+  width: auto;
+  height: 30rem;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 1.35rem;
+  font-weight: 100;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: inherit;
 }
 
-.main-container {
-    overflow: hidden;
+#haldi {
+  background-image: url(../images/haldi_background.webp);
+  background-size: cover;
 }
 
-.flipx {
-    animation: 2s anim-flipX ease infinite;
+#haldi h1,
+#haldi h4 {
+  color: #ffbd08;
 }
-@keyframes anim-flipX {
-0% {
-    opacity: 0;
-    transform: rotateX(90def);
+
+#engagement {
+  background-image: url(../images/engagement_background.webp);
+  background-size: auto;
 }
-50% {
-    opacity: 1;
-    transform: rotateX(720deg);
+
+#engagement h1,
+#engagement h4 {
+  color: #00beed;
 }
-100% {
-    /* animate nothing to pause animation at the end */
-    opacity: 1;
-    transform: rotateX(720deg);
+
+#wedding {
+  background-image: url(../images/wedding_background1.webp);
+  background-size: cover;
 }
+
+#wedding h1,
+#wedding h4 {
+  color: #700000;
 }
