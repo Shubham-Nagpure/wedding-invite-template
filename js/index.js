@@ -10,7 +10,7 @@
   });
 })(jQuery);
 
-var countDownDate = new Date("Jan 22, 2025 12:00:00").getTime();
+var countDownDate = new Date("Dec 05, 2025 12:17:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
